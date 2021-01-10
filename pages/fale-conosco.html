@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="../images/xsallus-favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/form.css">
+
+        <script src="../javascript/funcoes.js"></script>
+
+        <title>Google Glass</title>
+    </head>
+
+    <body> 
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+
+                <img id="icon" src="../images/contato.png" alt="google glass">
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="changePicture('home')" onmouseout="changePicture('contato')"><a href="../index.html">Home</a>
+
+                        <li onmouseover="changePicture('especificacoes')" onmouseout="changePicture('contato')"><a href="specs.html">Especificações</a>
+
+                        <li onmouseover="changePicture('fotos')" onmouseout="changePicture('contato')"><a href="fotos.html">Fotos</a>
+
+                        <li onmouseover="changePicture('multimidia')" onmouseout="changePicture('contato')"><a href="multimidia.html">Multimídia</a>
+
+                        <li>Fale conosco</a>
+                    </ul>
+                </nav>
+            </header>
+            <section id="contact-body">
+                <article id="main-news">
+                    <header id="article-header">
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por xSallus&trade;</h2>
+                            <h3 class="h3-to-right">Atualizado em 10/Janeiro/2020</h3>
+                        </hgroup>
+                    </header>
+                    <form method="" id="contactForm" action="../index.html" oninput="show_total();">
+                        <fieldset id="user">
+                            <legend>Identificação do Usuário</legend>
+                            <p><label for="cName">Nome: </label><input type="text" name="tName" id="cName" size="25" maxlength="30" placeholder="Your name"></p>
+                            <p><label for="cPassword">Senha: </label><input type="password" name="tPassword" id="cPassword" size="8" maxlength="8" placeholder="Password"></p>
+                            <p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail" size="30" maxlength="45" placeholder="Email"></p>
+                            <fieldset id="gender"><legend>Sexo:</legend><input type="radio" name="tGender" id="cMasc"><label for="cMasc">Masculino</label>
+                            <br>
+                            <input type="radio" name="tGender" id="cFem"><label for="cFem">Feminino</label>
+                            </fieldset>
+                            <p><label for="cBirth">Data de Nascimento: </label><input type="date" name="tBirth" id="cBirth" size="10" maxlength="8" placeholder="Birthday"></p>
+                        </fieldset>
+                        
+                        <fieldset id="user-address">
+                            <legend>Endereço do Usuário</legend>
+                            <p><label for="cLog">Logradouro: </label><input type="text" name="tLog" id="cLog" placeholder="Rua, Av, Trav..."></p>
+                            <p><label for="cNumber">Número: </label><input type="number" name="tNumber" id="cNumber" min="0" max="9999"></p>
+                            <p><label for="cState">Estado: </label><select name="tState" id="cState">
+                                
+                                <optgroup label="Regiao Norte">
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Para</option>
+                                    <option value="AC">Acre</option>
+                                </optgroup>
+                                <optgroup label="Regiao Nordeste">
+                                    <option value="CE">Ceara</option>
+                                    <option value="MA">MAranhao</option>
+                                    <option value="BA">Bahia</option>
+                                </optgroup> 
+
+                            </select></p>
+                            <p><label for="cCity">Cidade: </label><input type="text" name="tCity"  id="cCity" size="30" maxlength="0" placeholder="Your city" list="cities"></p>
+                            <datalist id="cities">
+                                <option value="manaus"></option>
+                                <option value="altazes"></option>
+                                <option value="nova olinda do norte"></option>
+                            </datalist>
+                        </fieldset>
+                        
+                        <fieldset id="message">
+                            <legend>Mensagem do Usuário</legend>
+                            <p><label for="cUrg">Grau de Urgência: <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2.5"></label></p>
+                            <p><label for="cMsg">Mensagem: <textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="Your message"></textarea></label></p>
+                        </fieldset>    
+                        
+                        <fieldset id="pedido">
+                            <legend>Quero um Google Glass</legend>
+                            <p><input type="checkbox" name="tPad" id="cPed"><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                            <p><label for="cColor">Cor: <select name="tColor" id="cColor">
+                                <option value="ff7a22">Orange</option>
+                                <option value="ffffff">Pearl White</option>
+                                <option value="a3a19f">Artic Silver</option>
+                                <option value="000000A">Black Piano</option>
+                            </select></label></p>
+                            <p><label for="cQtd">Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="10"></label></p>
+                            <p><label for="cTotal">Preço Total: R$ <input type="text" name="tTotal" id="cTotal" placeholder="Total a PA"></label></p>
+                        </fieldset>
+                        
+                        <input id="submite-btn" type="image" src="../images/botao-enviar.png" alt="Botao Submite" onclick="submite();">
+                    </form>
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p style="text-indent: 0;">
+                Copyright &copy; 2020 - by xSallus&trade;<br>
+                <a href="https://www.facebook.com/sal0mpas" target="_blank" rel="external">Facebook</a> | <a href="https://twitter.com/_xSallus_" target="_blank" rel="external">Twitter</a> | <a href="https://github.coem/xSallus" target="_blank" rel="external">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

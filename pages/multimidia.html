@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="../images/xsallus-favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/media.css">
+
+        <script src="../javascript/funcoes.js"></script>
+
+        <title>Google Glass</title>
+    </head>
+
+    <body> 
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+
+                <img id="icon" src="../images/multimidia.png" alt="google glass">
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="changePicture('home')" onmouseout="changePicture('multimidia')"><a href="../index.html">Home</a>
+                        <li onmouseover="changePicture('especificacoes')" onmouseout="changePicture('multimidia')"><a href="specs.html">Especificações</a>
+                        <li onmouseover="changePicture('fotos')" onmouseout="changePicture('multimidia')"><a href="fotos.html">Fotos</a>
+                        <li>Multimídia
+                        <li onmouseover="changePicture('contato')" onmouseout="changePicture('multimidia')"><a href="fale-conosco.html">Fale conosco</a>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="media-body">
+                <article id="main-news">
+                    <header id="article-header">
+                        <hgroup>
+                            <h3>Glass > Multimídia</h3>
+                            <h1>Sons e Vídeos</h1>
+                            <h2>por xSallus&trade;</h2>
+                            <h3 class="h3-to-right">Atualizado em 10/Janeiro/2020</h3>
+                        </hgroup>
+                    </header>
+                    <div id="tv-radio">
+                        <audio id="music" controls="controls">
+                            <source src="../misc/audio/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                            Sorry, can't load media
+                        </audio>
+                        <video id="film" controls="controls" poster="../images/video-mini03.jpg">
+                            <source src="../misc/video/getting-started.mp4" type="video/mpeg">
+                            Sorry, can't load media
+                        </video>
+                    </div>
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p style="text-indent: 0;">
+                Copyright &copy; 2020 - by xSallus&trade;<br>
+                <a href="https://www.facebook.com/sal0mpas" target="_blank" rel="external">Facebook</a> | <a href="https://twitter.com/_xSallus_" target="_blank" rel="external">Twitter</a> | <a href="https://github.coem/xSallus" target="_blank" rel="external">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

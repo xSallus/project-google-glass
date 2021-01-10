@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="../images/xsallus-favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/specs.css">
+
+        <script src="../javascript/funcoes.js"></script>
+
+        <title>Google Glass</title>
+    </head>
+
+    <body> 
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+
+                <img id="icon" src="../images/especificacoes.png" alt="google glass">
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="changePicture('home')" onmouseout="changePicture('especificacoes')"><a href="../index.html">Home</a>
+                        <li>Especificações</a>
+                        <li onmouseover="changePicture('fotos')" onmouseout="changePicture('especificacoes')"><a href="fotos.html">Fotos</a>
+                        <li onmouseover="changePicture('multimidia')" onmouseout="changePicture('especificacoes')"><a href="multimidia.html">Multimídia</a>
+                        <li onmouseover="changePicture('contato')" onmouseout="changePicture('especificacoes')"><a href="fale-conosco.html">Fale conosco</a>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="specs-body">
+                <article id="main-news">
+                    <header id="article-header">
+                        <hgroup>
+                            <h3>Glass > Especificações</h3>
+                            <h1>Raio-X no Google Glass</h1>
+                            <h2>por xSallus&trade;</h2>
+                            <h3 class="h3-to-right">Atualizado em 09/Janeiro/2020</h3>
+                        </hgroup>
+                    </header>
+                    
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass</p>
+                    <p>Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                    
+                    <section id="content">
+                        <img src="../images/glass-esquema-marcado.jpg" alt="Google Glass Eschema" usemap="#meu-mapa">
+                        <map name="meu-mapa">
+                            <area shape="poly" coords="183,219,266,207,267,243,186,258" href="google-glass.html#screen" target="window">
+                            <area shape="poly" coords="27,143,82,214,83,248,27,165" href="google-glass.html#sensors" target="window">
+                            <area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="window">
+                            <area shape="circle" coords="76,51,12" href="google-glass.html#gadgets" target="window">
+                        </map>
+                        <iframe name="window" id="frame-spec" src="google-glass.html" frameborder="0" scrolling="no"></iframe>
+                    </section>
+
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p style="text-indent: 0;">
+                Copyright &copy; 2020 - by xSallus&trade;<br>
+                <a href="https://www.facebook.com/sal0mpas" target="_blank" rel="external">Facebook</a> | <a href="https://twitter.com/_xSallus_" target="_blank" rel="external">Twitter</a> | <a href="https://github.coem/xSallus" target="_blank" rel="external">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

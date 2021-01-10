@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Orbitron&display=swap');
+
+body {
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+    font-family: 'Exo', sans-serif;
+}
+
+#interface {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: -20px auto 0px auto;     /*margin: up right down left;*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+p { 
+    text-align: justify;
+    text-indent: 50px;
+}
+
+p abbr { text-decoration: none;}
+
+#cabecalho {
+    background: url("../images/glass-logo-peq.jpg") no-repeat 0px 80px;
+    border-bottom: 1.5px #606060 solid;
+    height: 150px;
+}
+
+#cabecalho h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #606060;
+    font-size: 30pt;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 0px;
+    padding: 0px;
+    color: #888888;
+    font-size: 15pt;
+}
+
+#cabecalho #icon {
+    position: absolute;
+    left:1105px;
+    top: 70px;
+}
+
+.legended-photo {
+    position: relative;
+    border: 8px solid #ffffff;
+    box-shadow: 1.5px 1.5px 6px #000000;
+}
+
+.legended-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.legended-photo figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    transition: opacity 0.5s;
+    text-indent: none;
+}
+
+.legended-photo:hover figcaption { opacity: 1; }
+
+.legended-photo h4 {
+    float: left;
+    margin: 0px;
+    margin: 2px;
+}
+.legended-photo p { 
+    float: bottom;
+    margin: 2px;
+}
+
+#menu { display: block; }
+
+#menu ul { 
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    right: 80px;
+}
+
+#menu li {
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.65s;
+}
+
+#menu li:hover {
+    background-color: #606060;
+    color: #ffffff;
+}
+
+#menu h1 { display:  none; }
+
+#menu a { 
+    color: #000000;
+    text-decoration: none;
+}
+
+#menu a:hover { 
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#index-body {
+    display: block;
+    width: 650px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+#specs-body {
+    
+}
+
+#main-news h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#article-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+}
+
+#article-header h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+#article-header h3 { 
+    font-size: 12pt;
+    color: #606060;
+}
+
+.h3-to-right { text-align: right; }
+
+#specs-table {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#specs-table td {
+    border: 1px solid #606060;
+    padding: 7px;
+}
+
+#specs-table .left-col {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: center;
+    text-align: right;
+    font-weight: bold;
+}
+
+#specs-table .right-col {
+    color: #ffffff;
+    background-color: #888888;
+    text-align: left;
+}
+
+#specs-table caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#specs-table caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+    background-color: #dddddd;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#lateral h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+#lateral h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13pt;
+    background-color: #606060;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#rodape {
+    clear: both;
+    border-top: 1px #606060 solid;
+}
+
+#rodape p { text-align: center; }
+
+#rodape a {
+    text-decoration:  none;
+    color: #000000;
+}
+
+#rodape a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
