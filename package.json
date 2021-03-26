@@ -1,0 +1,18 @@
+{
+  "name": "guanabara",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": "git@github.com:xSallus/project-google-glass.git",
+  "author": "Salomao Souza <souza95salomao@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
