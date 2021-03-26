@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/form.css">
 
-        <script src="../javascript/funcoes.js"></script>
+        <script src="js/funcoes.js"></script>
 
         <title>Google Glass</title>
     </head>
@@ -25,16 +25,7 @@
 
                 <img id="icon" src="../images/contato.png" alt="google glass">
 
-                <nav id="menu">
-                    <h1>Menu Principal</h1>
-                    <ul>
-                        <li onmouseover="changePicture('home')" onmouseout="changePicture('glass-oculos-preto-peq')"><a href="/">Home</a>
-                        <li onmouseover="changePicture('especificacoes')" onmouseout="changePicture('glass-oculos-preto-peq')"><a href="/specs">Especificações</a>
-                        <li onmouseover="changePicture('fotos')" onmouseout="changePicture('glass-oculos-preto-peq')"><a href="/photos">Fotos</a>
-                        <li onmouseover="changePicture('multimidia')" onmouseout="changePicture('glass-oculos-preto-peq')"><a href="/multimidia">Multimídia</a>
-                        <li onmouseover="changePicture('contato')" onmouseout="changePicture('glass-oculos-preto-peq')"><a href="/fale-conosco">Fale conosco</a>
-                    </ul>
-                </nav>
+                <%- include('parts/navBar') %>
             </header>
             <section id="contact-body">
                 <article id="main-news">
@@ -109,12 +100,7 @@
                 </article>
             </section>
 
-            <footer id="rodape">
-                <p style="text-indent: 0;">
-                Copyright &copy; 2021 - by xSallus&trade;<br>
-                <a href="https://www.facebook.com/sal0mpas" target="_blank" rel="external">Facebook</a> | <a href="https://twitter.com/_xSallus_" target="_blank" rel="external">Twitter</a> | <a href="https://github.coem/xSallus" target="_blank" rel="external">GitHub</a>
-                </p>
-            </footer>
+            <%- include('parts/footer') %>
         </div>
     </body>
 </html>
