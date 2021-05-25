@@ -1,12 +1,22 @@
 import React from 'react'
 
-import styles from '../../styles/components/header.module.css'
 import Menu from '../Menu'
 
+import useIcon from '../../contexts/HeaderContext'
+
+import styles from '../../styles/components/header.module.css'
+
 const Header = () => {
+    const [ icon ] = useIcon()
+
     return (
         <nav className={styles.header}>
             <Menu />
+            <div>
+                <h1>google glass</h1>
+                <h2>A revolucao do Google est&aacute; chegando</h2>
+            </div>
+            <img src={`images/${icon}.png`} alt="Page Icon" />
         </nav>
     )
 }

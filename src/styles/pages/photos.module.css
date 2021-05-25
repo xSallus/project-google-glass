@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.photosContainer {
+    max-width: 80%;
+    width: 90vw;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: green;
+}
