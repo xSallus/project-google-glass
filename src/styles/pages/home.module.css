@@ -12,4 +12,6 @@
     justify-content: center;
 
     background: green;
+
+    overflow-y: scroll;
 }

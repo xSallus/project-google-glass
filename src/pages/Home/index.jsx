@@ -5,7 +5,7 @@ import styles from '../../styles/pages/home.module.css'
 const Home = () => {
     const currentDate = Date.parse(Date.now())
 
-    React.useEfffect(()=>{console.log(currentDate)}, [])
+    React.useEffect(()=>{console.log(currentDate)}, [])
 
     return (
         <div className={styles.homeContainer} >
@@ -36,13 +36,33 @@ const Home = () => {
                 <section>
                     <span>What you can do with Google Glass?</span>
                     <p>The marketing video from Google shows that you can make yourself a 'super-human', once the device can indicate how many meters your from your checkpoint, if the train station is open/closed, show climate, and even allows you to agend dates with just one voice command.</p>
-                    {/*An video goes here*/}
+                    <video 
+                        height="120px"
+                        width="350px"
+                        controls
+                    ><source
+                        src="media/getting-started.mp4"
+                        alt="Getting started video"
+                        title="Getting started"
+                        type="video/mp4"
+                      />
+                    </video>
                 </section>
             </main>
             <aside>
                 <span>Other news</span>
                 <span>Most recent videos</span>
-                {/*outro video aqui*/}
+                <video 
+                    height="120px"
+                    width="350px"
+                    controls
+                ><source
+                    src="media/getting-started.mp4"
+                    alt="Getting started video"
+                    title="Getting started"
+                    type="video/mp4"
+                  />
+                </video>
                 <section>
                     <h3>News on Glass</h3>
                     <p>Google finally has revealed google Glass full specs, and a surprise still uncommon: the search giant will put in it's device an audio system based on trasnduction with conduction. Inside glas hastes, the sound will be transfered to user's ears via micro vibrations in some bones in his head, without using any auto-falante.</p>
