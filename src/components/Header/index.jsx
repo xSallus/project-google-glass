@@ -14,7 +14,7 @@ const Header = () => {
             <Menu />
             <div>
                 <h1>google glass</h1>
-                <h2>A revolucao do Google est&aacute; chegando</h2>
+                <h2>Google's revolution is coming</h2>
             </div>
             <img src={`images/${icon}.png`} alt="Page Icon" />
         </nav>
