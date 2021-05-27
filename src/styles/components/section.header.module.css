@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.sectionHeader {
+    width: 100%;
+}
+
+.sectionHeader p {
+    color: rgba(0,0,0,.68);
+    font-size: 1.08rem;
+}
+
+.sectionHeader h1 {
+    text-align: left;
+    font-size: 2.35em;
+    font-weight: 600;
+    color: rgba(0,0,0,.48);
+}
+
+.sectionHeader h2 {
+    color: #c0c0c0;
+    font-size: 1.08rem;
+}
+
+.sectionHeader h3 {
+    text-align: right;
+}
