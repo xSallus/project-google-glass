@@ -1,21 +1,19 @@
 import React from 'react'
 
+import SectionHeader from '../../components/SectionHeader'
+
 import styles from '../../styles/pages/home.module.css'
 
 const Home = () => {
     const currentDate = Date.parse(Date.now())
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     React.useEffect(()=>{console.log(currentDate)}, [])
 
     return (
         <div className={styles.homeContainer} >
             <main>
-                <header>
-                    <p>Technologies &gt; Inovations</p>
-                    <h1>know all about Google Glass</h1>
-                    <h2>by xSallus</h2>
-                    <h3>Updated at Mar 26, 2021</h3>
-                </header>
+                <SectionHeader title="know all about Google Glass" misc="Technologies &gt; Inovations" />
                 <section>
                     <span>What is it?</span>
                     <p>The <span>Google Glass</span> is a glass like accessory that makes possible for user to interact with a variety of contents in agumented reality. Also called Project Glass, this device is capable of take photos from voice commands, send instant messages and and make video-calls. It's launch is scheduled to 2014 and it's price can be up to US$ 1,5k. Actually <span>Google Glass</span> is at tests and has a full video recorded with the device. Besides that, the Search giant registered new patents anti-steal and screen unlock for the device.</p>
