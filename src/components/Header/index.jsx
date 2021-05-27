@@ -16,7 +16,7 @@ const Header = () => {
                 <h1>google glass</h1>
                 <h2>Google's revolution is coming</h2>
             </div>
-            <img src={`images/${icon}.png`} alt="Page Icon" />
+            <img src={`/images/${icon}.png`} alt="Page Icon" />
         </nav>
     )
 }

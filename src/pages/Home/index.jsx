@@ -17,7 +17,7 @@ const Home = () => {
                 <section>
                     <h3>What is it?</h3>
                     <p>The <span>Google Glass</span> is a glass like accessory that makes possible for user to interact with a variety of contents in agumented reality. Also called Project Glass, this device is capable of take photos from voice commands, send instant messages and and make video-calls. It's launch is scheduled to 2014 and it's price can be up to US$ 1,5k. Actually <span>Google Glass</span> is at tests and has a full video recorded with the device. Besides that, the Search giant registered new patents anti-steal and screen unlock for the device.</p>
-                    <img src="images/glass-quadro-homem-mulher.jpg" alt="Project Glass in action" />
+                    <img src="/images/glass-quadro-homem-mulher.jpg" alt="Project Glass in action" />
                     <small>How Google Glass look like</small>
                 </section>
                 <section>
@@ -40,7 +40,7 @@ const Home = () => {
                         width="350px"
                         controls
                     ><source
-                        src="media/getting-started.mp4"
+                        src="/media/getting-started.mp4"
                         alt="Getting started video"
                         title="Getting started"
                         type="video/mp4"
@@ -56,7 +56,7 @@ const Home = () => {
                     width="350px"
                     controls
                 ><source
-                    src="media/getting-started.mp4"
+                    src="/media/getting-started.mp4"
                     alt="Getting started video"
                     title="Getting started"
                     type="video/mp4"
