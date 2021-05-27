@@ -62,11 +62,11 @@ const Form = () => {
             <option value="#f00" >Red</option>
             <option value="#00f" >Blue</option>
             <option value="#0f0" >Green</option>
-            <option value="#fbff05" >Yellow</option>
-            <option value="#f00" >Ros&eacute;</option>
-            <option value="#f00" >Silver</option>
-            <option value="#f00" >Black Piano</option>
-            <option value="#f00" >Pearl white</option>
+            <option value="#ff5" >Yellow</option>
+            <option value="#faf" >Ros&eacute;</option>
+            <option value="#ddd" >Silver</option>
+            <option value="#000" >Black Piano</option>
+            <option value="#fff" >Pearl white</option>
           </select>
         </div>
         <div>
