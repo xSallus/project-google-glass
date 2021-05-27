@@ -9,7 +9,30 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 
-    background: green;
+    gap: 1.45rem;
+    position: relative;
+}
+
+.mediaContainer img {
+    height: 25rem;
+}
+
+.mediaContainer video,
+.mediaContainer audio {
+    position: absolute;
+}
+
+.mediaContainer video {
+    top: 15rem;
+    left: 17.5rem;
+}
+
+.mediaContainer audio {
+    width: 12.95rem;
+    height: 2rem;
+    top: 30.35rem;
+    left: 38.5rem;
 }
