@@ -67,13 +67,52 @@
     clear: both;
 }
 
+.homeContainer video {
+    margin-top: 2rem;
+    margin-left: 8rem;
+
+    height: 14rem;
+    width: 25rem;
+}
+
 .homeContainer aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 1rem;
 
-    background: green;
+    background: #c0c0c0;
 
-    overflow-y: scroll;
+    padding: 1rem;
+}
+
+.homeContainer aside span {
+    width: 100%;
+    padding: .25rem .35rem;
+    font-size: 1.25rem;
+
+    background: #555;
+    color: #fff;
+}
+
+.homeContainer aside section h3 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .48);
+}
+
+.homeContainer aside video {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    height: 12rem;
+    width: 22rem;
+}
+
+.homeContainer aside section {
+    margin-top: 2rem;
+}
+
+.homeContainer aside section p {
+    text-align: justify;
 }
