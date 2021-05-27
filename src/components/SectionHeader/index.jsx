@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionHeader = (misc, title) => {
+const SectionHeader = ({ misc, title }) => {
   return (
     <header>
       <p>{misc}</p>
