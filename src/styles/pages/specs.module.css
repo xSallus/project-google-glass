@@ -1,15 +1,28 @@
 @charset "UTF-8";
 
-.specsContainer  {
-    max-width: 80%;
-    width: 90vw;
-    height: 100%;
+.specsContainer {
+  max-width: 80%;
+  width: 90vw;
+  height: 100%;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-    background: green;
+.specsInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.specsDiv {
+  display: flex;
+}
+
+.map {
+    position: absolute;
+    background: rgba(0,0,0,0);
 }
